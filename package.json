@@ -16,8 +16,9 @@
     "url": "https://github.com/dchdev6/intro_nodejs_express/issues"
   },
   "homepage": "https://github.com/dchdev6/intro_nodejs_express#readme",
-  "description": "",
+  "description": "Created by Sean Joseph C. Arcana",
   "dependencies": {
     "express": "^4.21.2"
-  }
+  },
+  "devDependencies": {}
 }

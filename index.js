@@ -32,8 +32,15 @@ app.use((req, res, next) => {
   res.status(500).send("Something broke!");
 });
 
+const items = ['Apple','Banna','Orange'];
+
+app.post('/items', (req, res) => {
+    const newItem = req.body.item;
+    items.push(newItem);
+    res.json(items);
+});
+
 // Start the server
 app.listen(port, () => {
   console.log(`Server started at http://localhost:${port}`);
 });
-
