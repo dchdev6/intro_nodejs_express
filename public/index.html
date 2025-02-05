@@ -35,8 +35,8 @@
         });
 
         async function loadItems() {
-            const response = await fetch('/items');
-            const items = await response.json();
+            const res = await fetch('/items');
+            const items = await res.json();
             list.innerHTML = items.map(item => `<li>${item}</li>`).join('');
         }
 

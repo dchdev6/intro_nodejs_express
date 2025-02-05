@@ -22,17 +22,11 @@ app.post('/submit', (req, res) => {
   res.send (`Received: ${JSON.stringify(data)}`);
 })
 
-app.use((req, res, next) => {
-  console.log(`${req.method} request for ${req.url}`);
-  next();
-});
+const items = ['Apple','Banana','Orange'];
 
-app.use((req, res, next) => {
-  console.error(err.stack);
-  res.status(500).send("Something broke!");
+app.get('/items', (req, res) => {
+    res.json(items);
 });
-
-const items = ['Apple','Banna','Orange'];
 
 app.post('/items', (req, res) => {
     const newItem = req.body.item;
