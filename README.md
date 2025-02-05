@@ -1,3 +1,5 @@
 
-# INTRODUCTION FOR Node.js and Express.js by ARCANA, SEAN JOSEPH C.
+# INTRODUCTION FOR Node.js and Express.js
+
+Created by Sean Joseph C. Arcana
 
